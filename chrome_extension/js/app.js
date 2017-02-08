@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
       checkbox.setAttribute("checked", "");
 
     var     switchery = new Switchery(checkbox);
+    var     input = document.querySelector("#file_input");
 
-    console.log(checkbox.checked);
     localStorage.setItem("enable_poisontap_cookies", checkbox.checked);
 
     /* To enable poisontap cookies use */
@@ -27,9 +27,9 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(localStorage.getItem("enable_poisontap_cookies"));
     };
 
-    /* To load poisontap.cookie.log */
-    document.getElementById("fct_file_loading").addEventListener("click", load_pt_file);
-
+    input.onchange = function (e) {
+        load_pt_file(e);
+    }
 });
 
 
