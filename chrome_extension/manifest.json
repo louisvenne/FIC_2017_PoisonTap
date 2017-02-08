@@ -1,0 +1,21 @@
+{
+  "background": {
+    "scripts": ["js/jshttpcookie.js", "js/background.js"]
+  },
+
+  "manifest_version": 2,
+
+  "name": "PoisonTap Cookie Manager",
+  "description": "This extension add poisontap steal cookie",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "images/logopi.png",
+    "default_popup": "app.html"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "\u003Call_urls>"
+  ]
+}
