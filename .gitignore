@@ -1,0 +1,12 @@
+# File .gitignore for project PoisonTap
+
+### MacOS File ###
+.DS_Store
+
+### IntelliJ IDEA ###
+/out
+.idea_modules
+.idea
+*.iws
+*.iml
+*.ipr
