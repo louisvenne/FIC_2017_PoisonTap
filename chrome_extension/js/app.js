@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(localStorage.getItem("enable_poisontap_cookies"));
     };
 
+    /* To load the file when a new file is chosen */
     input.onchange = function (e) {
         load_pt_file(e);
     }
