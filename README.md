@@ -1,13 +1,12 @@
 # Demonstration of PoisonTap - FIC 2017
 
 *PoisonTap exploit created by Samy Kamkar*
+*Chrome extension for PoisonTap Cookies created by Pandhack & drouarb*
 
-*Chrome extension for PoisonTap Cookie created by Pandhack & drouarb*
-
-What we have done in addition to Samy Kamkar's work :
-* Modified *pi_poisontap.js* to generate a file *cookies.json* with a correct json syntax
-* Modified *backdoor.html* to allow the backdoor to reconnect itself automatically
-* Developed a *chrome extension* to import siphoned cookies
+What we have done in addition to Samy Kamkar's <a href="https://github.com/samyk/poisontap" target=_blank>work</a>  :
+* Modified **pi_poisontap.js** to generate a file **cookies.json** with a correct json syntax
+* Modified **backdoor.html** to allow the backdoor to reconnect itself automatically
+* Developed a **chrome extension** to import siphoned cookies
 
 ## ChromeExtension : Installation
 
