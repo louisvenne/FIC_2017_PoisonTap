@@ -1,7 +1,6 @@
 # Demonstration of PoisonTap - FIC 2017
 
-*PoisonTap exploit created by Samy Kamkar*
-*Chrome extension for PoisonTap Cookies created by Pandhack & drouarb*
+*PoisonTap exploit created by <a href="https://github.com/samyk/" target=_blank>Samy Kamkar</a> & Chrome extension for PoisonTap Cookies created by <a href="https://github.com/Pandhack/" target=_blank>Pandhack</a> & <a href="https://github.com/drouarb/" target=_blank>drouarb</a>*
 
 What we have done in addition to Samy Kamkar's <a href="https://github.com/samyk/poisontap" target=_blank>work</a>  :
 * Modified **pi_poisontap.js** to generate a file **cookies.json** with a correct json syntax
